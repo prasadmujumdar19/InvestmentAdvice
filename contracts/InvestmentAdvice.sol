@@ -85,27 +85,7 @@ contract InvestmentAdvice {
                     InvestorAdvisorsMapping[i].AdvisorStake = _vAdvisorStake;
                 }
             }
-        }
-
-        // ensuring that this function is called only
-
-
-/*        InvestorAdvisorsMapping[_advisorIndex].AcceptedStatus = true;
-        _Investor.status = InvestmentAdviceContractStatus.Recommended;
-        for (uint16 i = 0; i <= _Investor.RecommendationsCounter; i++){
-            if(!(i == _advisorIndex)){
-
-                // step a - store advisor stake in temp variable
-                uint256 _vAdvisorStake = InvestorAdvisorsMapping[i].AdvisorStake;
-                // step b - change advisor stake state variable to zero
-                InvestorAdvisorsMapping[i].AdvisorStake = 0;
-                // step c - try sending back advisor stake, if doesn't work revert the stake value
-                if(!payable(InvestorAdvisorsMapping[i].AdvisorAddress).send(InvestorAdvisorsMapping[i].AdvisorStake)){
-                    InvestorAdvisorsMapping[i].AdvisorStake = _vAdvisorStake;
-                }
-            }
-        }
-  */      
+        }   
     }
     
 }
