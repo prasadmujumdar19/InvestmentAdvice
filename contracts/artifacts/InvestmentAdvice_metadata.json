@@ -1,0 +1,233 @@
+{
+	"compiler": {
+		"version": "0.8.7+commit.e28d00a7"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_investmentAmount",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_duration",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_expectation",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "payable",
+				"type": "constructor"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"components": [
+							{
+								"internalType": "address",
+								"name": "InvestorAddress",
+								"type": "address"
+							},
+							{
+								"internalType": "uint256",
+								"name": "InvestorStake",
+								"type": "uint256"
+							},
+							{
+								"internalType": "uint256",
+								"name": "InvestmentAmount",
+								"type": "uint256"
+							},
+							{
+								"internalType": "uint256",
+								"name": "TimeDuration",
+								"type": "uint256"
+							},
+							{
+								"internalType": "uint256",
+								"name": "ExpectedReturnInPercentage",
+								"type": "uint256"
+							},
+							{
+								"internalType": "uint16",
+								"name": "RecommendationsCounter",
+								"type": "uint16"
+							},
+							{
+								"internalType": "enum InvestmentAdvice.InvestmentAdviceContractStatus",
+								"name": "status",
+								"type": "uint8"
+							}
+						],
+						"indexed": false,
+						"internalType": "struct InvestmentAdvice.Investor",
+						"name": "_Investor",
+						"type": "tuple"
+					}
+				],
+				"name": "NewAdviceRequested",
+				"type": "event"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint16",
+						"name": "",
+						"type": "uint16"
+					}
+				],
+				"name": "InvestorAdvisorsMapping",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "AdvisorAddress",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "AdvisorStake",
+						"type": "uint256"
+					},
+					{
+						"internalType": "string",
+						"name": "StockRecommendation",
+						"type": "string"
+					},
+					{
+						"internalType": "bool",
+						"name": "AcceptedStatus",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "NativeBalance",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "_Investor",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "InvestorAddress",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "InvestorStake",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "InvestmentAmount",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "TimeDuration",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "ExpectedReturnInPercentage",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint16",
+						"name": "RecommendationsCounter",
+						"type": "uint16"
+					},
+					{
+						"internalType": "enum InvestmentAdvice.InvestmentAdviceContractStatus",
+						"name": "status",
+						"type": "uint8"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "_stockRecommendation",
+						"type": "string"
+					}
+				],
+				"name": "makeRecommendation",
+				"outputs": [],
+				"stateMutability": "payable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint16",
+						"name": "_advisorIndex",
+						"type": "uint16"
+					}
+				],
+				"name": "recommendationAccepted",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/InvestmentAdvice.sol": "InvestmentAdvice"
+		},
+		"evmVersion": "london",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/InvestmentAdvice.sol": {
+			"keccak256": "0x5db206ac9087280bbe657becba3fa79082aaefb707f24b837634e3a3c1de6160",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://5f2d9c13f16b37fed77b5e60cb84167a74fb450a29eef6cfb9757592c9e126ce",
+				"dweb:/ipfs/QmTsabE2FEA83jhAAuDiR78XefwMtRGJenmFvHAGJMQ9DG"
+			]
+		}
+	},
+	"version": 1
+}

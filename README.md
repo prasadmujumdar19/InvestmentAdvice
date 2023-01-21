@@ -2,7 +2,7 @@
 First solidity project
 
 -- Information below is rough sketch of what functionality I am intending to achieve..
-
+ 
 -- It's not up-to-date with code if you are seeing this line.. I just wrote these notes, started working on code and then discoverd things as I went along
 -- Also, there were some learnings such as re-entrancy that I incorportated as I went along
 -- Haven't got a chance yet to review and revise below notes
